@@ -14,11 +14,25 @@ Calculate the appropriate metric of interest in `R` (relative risk or odds ratio
 
 > Imagine a study assessing the effect of alcohol use (_"heavy drinking_") on liver disease. The researchers started with **100 liver disease patients**, then identified **150 people without the disease**. In the study, **75 liver disease patients** reported a history of heavy drinking, while only **50 people without the disease** reported a history of heavy drinking.
 
+```{r oddsratio1}
+  oddsRatio1 = (75/25) / (50/100)
+```
+> Odds Ratio = (odds of heavy drinking | Liver Disease) / (Odds of heavy drinking | no liver disease)
+
+> The odds someone with Liver Disease being a heavy drinker is `r oddsRatio1` times higher than the odds of a someone without Liver Disease being a heavy drinker
+
 ## Problem 2
 
 Calculate the appropriate metric of interest in `R` (relative risk or odds ratio), then **write out a sentence** that describes your findings (i.e., _"the risk of..."_ or _"the odds of..."_).
 
 > Imagine a study assessing the effect of a vegetarian diet on heart disease. The researchers identified **100 healthy vegetarians** and **100 healthy meat eaters**, and then followed them to see their health outcomes. In the study, **10 vegetarians** experienced a heart attack, while **20 meat eaters** experienced a heart attack.
+
+```{r relativerisk1} 
+  relativeRisk1 = (10/100) / (20/100)
+```
+> Relative Risk = (risk of heart disease | vegetarian) / (risk of heart disease | non vegetarian)
+
+> The risk of developing a Heart Disease was `r relativeRisk1` times lower for Vegetarians than Non-Vegetarians.
 
 ## Problem 3
 
@@ -26,9 +40,24 @@ Calculate the appropriate metric of interest in `R` (relative risk or odds ratio
 
 > Imagine a study assessing the effect of a bike commuting on experiencing a road traffic accident. The researchers identified **100 bike commuters** and **120 bus commuters**, and then followed them to see their health outcomes. In the study, **30 bike commuters** experienced a road traffic accident, while **10 bus riders** experienced a road traffic accident.
 
+```{r relativerisk2} 
+  relativeRisk2 = (30/100) / (10/120)
+```
+> Relative Risk = (risk of accident | biker) / (risk of accident | non biker)
+
+> The risk of experiencing an accident is `r relativeRisk2` times higher for Bikers than Non-Bikers
 
 ## Problem 4
 
 Calculate the appropriate metric of interest in `R` (relative risk or odds ratio), then **write out a sentence** that describes your findings (i.e., _"the risk of..."_ or _"the odds of..."_).
 
 > Imagine a study assessing the effect of drinking seltzer water on developing cavities. The researchers started with **300 people with cavities**, then identified **250 people without cavities**. In the study, **80 people with cavities** reported being seltzer water, while **70 people without cavities** reported being seltzer drinkers.
+
+```{r oddsratio2}
+  oddsRatio2 = (80/220) / (70/180)
+```
+
+> Odds Ratio = (odds of drinking seltzer water | Cavities) / (Odds of drinking seltzer water | no cavities)
+
+> The odds someone with cavities being a consumer of seltzer water was `r oddsRatio2` times lower than the odds of a someone without cavities being a consumer of seltzer water.
+
